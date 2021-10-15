@@ -1,6 +1,6 @@
 # Honeypot field plugin for Craft CMS 3.x
 
-Submit entry form data  to SOAP service
+Protect guest entry submission from Spam
 
 ![Screenshot](resources/img/plugin-logo.png)
 
