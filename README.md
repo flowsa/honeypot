@@ -1,4 +1,4 @@
-# Craft ReCaptcha v2 plugin for Craft CMS 3.x
+# Honeypot field plugin for Craft CMS 3.x
 
 Submit entry form data  to SOAP service
 
@@ -20,21 +20,22 @@ To install the plugin, follow these instructions.
 
         composer require flowsa/honeypot
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Craft ReCaptcha v2.
-
-## Craft ReCaptcha v2 Overview
-
--Insert text here-
-
-## Configuring Craft ReCaptcha v2
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Honeypot field.
+        
+        ./craft plugin/install honeypot
+## Honeypot field Overview
 
 -Insert text here-
 
-## Using Craft ReCaptcha v2
+## Configuring Honeypot field
 
 -Insert text here-
 
-## Craft ReCaptcha v2 Roadmap
+## Using Honeypot field
+
+-Insert text here-
+
+## Honeypot field Roadmap
 
 Some things to do, and ideas for potential features:
 
