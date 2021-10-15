@@ -1,0 +1,35 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Craft ReCaptcha v2 plugin for Craft CMS
+ *
+ * CraftRecaptchaV2Field Field field
+ *
+ * @author    Flow communications
+ * @copyright Copyright (c) 2020 Flow communications
+ * @link      https://www.flowsa.com
+ * @package   CraftRecaptchaV2
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Site Key',
+    instructions: 'Enter your reCAPTCHA site key.',
+    id: 'siteKey',
+    name: 'siteKey',
+    value: field['siteKey'],
+    required: true})
+}}
+
+{{ forms.textField({
+    label: 'Secret Key',
+    instructions: 'Enter your reCAPTCHA secret key.',
+    id: 'secretKey',
+    name: 'secretKey',
+    value: field['secretKey'],
+    required: true})
+}}
+

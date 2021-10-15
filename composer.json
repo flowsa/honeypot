@@ -1,0 +1,38 @@
+{
+    "name": "flowsa/honeypot",
+    "description": "Add a honeypot captcha to your Craft CMS form",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft honey pot"
+    ],
+    "support": {
+        "docs": "https://github.com/flowsa/honeypot/blob/master/README.md",
+        "issues": "https://github.com/flowsa/honeypot/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flow communications",
+            "homepage": "https://www.flowsa.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "flowsa\\honeypot\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Honeypot",
+        "handle": "honeypot",
+        "developer": "Flow communications",
+        "developerUrl": "https://www.flowsa.com"
+    }
+}

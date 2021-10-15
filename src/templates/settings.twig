@@ -1,0 +1,35 @@
+{% import "_includes/forms" as forms %}
+{% macro configWarning(setting) -%}
+    {% set setting = '<code>'~setting~'</code>' %}
+    {{ "This is being overridden by the {setting} config setting in your {file} config file."|t('flow-re-captcha', {
+        setting: setting,
+        file: 'honeypot.php'
+    })|raw }}
+{%- endmacro %}
+
+{% from _self import configWarning %}
+
+{{ forms.textField({
+    first:        true,
+    label:        "Honeypot Form Param"|t('flow-re-captcha'),
+    id:           'honeypot-param',
+    class:        'code',
+    name:         'honeypotParam',
+    required: true,
+    instructions: "The name that the honeypot field should have."|t('flow-re-captcha'),
+    value:        (settings['honeypotParam'] ?? ''),
+    disabled:     'honeypotParam' in overrides,
+    warning:      'honeypotParam' in overrides ? configWarning('honeypotParam'),
+    errors:       settings.getErrors('prependSender')
+}) }}
+
+
+{{ forms.textField({
+    label: 'Website URL field',
+    instructions: 'Enter field used to capture website URL. Double spam blocker',
+    id: 'siteKey',
+    name: 'siteKey',
+    value: settings['siteKey'],
+    })
+}}
+

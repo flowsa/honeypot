@@ -1,0 +1,20 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Craft ReCaptcha v2 plugin for Craft CMS 3.x
+ *
+ * CraftRecaptchaV2Field Field Input
+ *
+ * @author    Flow communications
+ * @copyright Copyright (c) 2020 Flow communications
+ * @link      https://www.flowsa.com
+ * @package   CraftRecaptchaV2
+ * @since     1.0.0
+ */
+#}
+
+{{- hiddenInput(name, value|default(1), {
+        id: name
+}) -}}
+
+
